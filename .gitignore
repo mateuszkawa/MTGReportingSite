@@ -22,3 +22,13 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+
+# Eclipse
+
+.settings/
+.classpath
+*/.gitignore
+*/.project
+*/.settings/
+
+
