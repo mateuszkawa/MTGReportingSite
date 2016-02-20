@@ -12,6 +12,12 @@ public class LoginValidator extends AbstractValidator<String>{
 	
 	@Override
 	protected boolean isValidValue(String value) {
+		if(value == null){
+			return false;
+		}
+		else if(value.isEmpty()){
+			return false;
+		}
 		return true;
 	}
 

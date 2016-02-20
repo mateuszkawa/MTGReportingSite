@@ -12,9 +12,13 @@ public class PasswordValidator extends AbstractValidator<String>{
 
 	@Override
 	protected boolean isValidValue(String value) {
-		//Password must be at least 6 char long
-		if(value.length() < 6)
+		if(value == null) {
 			return false;
+		}
+		//Password must be at least 6 char long
+		else if(value.length() < 6){
+			return false;
+		}
 		return true;
 	}
 

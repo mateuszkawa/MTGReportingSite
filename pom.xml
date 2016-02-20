@@ -52,7 +52,7 @@
 				<artifactId>log4j</artifactId>
 				<version>1.2.17</version>
 			</dependency>
-			
+
 			<!-- MODULES -->
 			<dependency>
 				<groupId>com.duckshuntersteam</groupId>
@@ -63,6 +63,33 @@
 				<groupId>com.duckshuntersteam</groupId>
 				<artifactId>MTGReportingPortal-Bussines</artifactId>
 				<version>${project.version}</version>
+			</dependency>
+
+			<!-- VAADIN -->
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-client-compiled</artifactId>
+				<version>7.6.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-themes</artifactId>
+				<version>7.6.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-client</artifactId>
+				<version>7.6.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-client-compiler</artifactId>
+				<version>7.6.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-theme-compiler</artifactId>
+				<version>7.1.15</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
