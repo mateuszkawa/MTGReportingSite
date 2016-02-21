@@ -30,6 +30,19 @@
 		<artifactId>MTGReportingPortal</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.arquillian</groupId>
+				<artifactId>arquillian-bom</artifactId>
+				<version>1.1.11.Final</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<!-- VAADIN -->
 		<dependency>
@@ -63,6 +76,21 @@
 			<artifactId>mockito-all</artifactId>
 		</dependency>
 
+		<!-- ARQUILLIAN -->
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.container</groupId>
+			<artifactId>arquillian-weld-ee-embedded-1.1</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+		</dependency>
+
 		<!-- MODULES -->
 		<dependency>
 			<groupId>com.duckshuntersteam</groupId>
@@ -71,6 +99,12 @@
 		<dependency>
 			<groupId>com.duckshuntersteam</groupId>
 			<artifactId>MTGReportingPortal-Bussines</artifactId>
+		</dependency>
+
+		<!-- WELD -->
+		<dependency>
+			<groupId>org.jboss.weld</groupId>
+			<artifactId>weld-core</artifactId>
 		</dependency>
 	</dependencies>
 </project>

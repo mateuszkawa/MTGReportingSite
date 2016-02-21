@@ -1,15 +1,15 @@
 package logger;
 
-import org.apache.log4j.*;
+import javax.enterprise.inject.Produces;
+import javax.enterprise.inject.spi.InjectionPoint;
 
-//import javax.enterprise.inject.Produces;
-//import javax.enterprise.inject.spi.InjectionPoint;
+import org.apache.log4j.*;
 
 public class LoggingProducer {
 
-    /*@Produces @Log
+    @Produces
     private Logger createLogger(InjectionPoint injectionPoint) {
         return Logger.getLogger(injectionPoint.getMember().getDeclaringClass());
-    }*/
+    }
 
 }
