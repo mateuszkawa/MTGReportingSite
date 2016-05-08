@@ -62,7 +62,8 @@
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
-			<!-- This needs to be added, when the arquillian-bom should be in dependenyManagement section
+			
+<!-- This needs to be added, when the arquillian-bom should be in dependenyManagement section
 			<dependency>
 				<groupId>org.jboss.arquillian.junit</groupId>
 				<artifactId>arquillian-junit-container</artifactId>
